@@ -25,7 +25,7 @@ module.exports = {
         gray: "#999999",
         globalGreen: "#00B709",
         FgrayWhite: "#FAFAFA",
-        Fred: 'red-950'
+        BorderColor: '#ECECEC'
       },
 
       fontFamily: {
