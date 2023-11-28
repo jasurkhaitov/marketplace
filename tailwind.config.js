@@ -8,7 +8,9 @@ module.exports = {
       lg: "976px",
       mlg: "1200px",
       xl: "1440px",
-      xxl: "1536px"
+      xxl: "1536px",
+      exl: "1700px",
+      exxl: "1800px"
     },
 
     container: {
@@ -49,6 +51,24 @@ module.exports = {
             fontWeight: "400",
             letterSpacing: 0,
           },
+        ],
+
+        secondText: [
+          "24px",
+          {
+            lineHeight: "28.8px",
+            fontWeight: "600",
+            letterSpacing: 0,
+          }
+        ],
+
+        sliderText: [
+          "36px",
+          {
+            lineHeight: "43.2px",
+            fontWeight: "700",
+            letterSpacing: 0,
+          }
         ],
       },
     },

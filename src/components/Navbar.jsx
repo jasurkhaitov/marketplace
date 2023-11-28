@@ -12,36 +12,37 @@ export default function Navbar() {
 
   return (
     <nav className=' bg-FgrayWhite'>
-        <div className='xxl:px-[50px] m-auto container border-b-[1px] border-BorderColor'>
+        <div className='border-b-[1px] border-BorderColor'>
+          <div className='xxl:px-[50px] m-auto container'>
+            <div className='py-2 flex items-center justify-between'>
 
-          <div className='py-2 flex items-center justify-between'>
+              <div className='flex items-center justify-start gap-[30px]'>
+                <form action="#!" className='flex items-center justify-center gap-[5px]'>
+                  <label htmlFor="lang">{icons.language}</label>
+                  <select name="language" id="lang" className='w-[90px] text-miniText text-globalBlack bg-transparent focus:outline-none'>
+                    <option value="Русский" className='bg-transparent'>Русский</option>
+                    <option value="English" className='bg-transparent'>English</option>
+                    <option value="Uzbek" className='bg-transparent'>Uzbek</option>
+                  </select>
+                </form>
 
-            <div className='flex items-center justify-start gap-[30px]'>
-              <form action="#!" className='flex items-center justify-center gap-[5px]'>
-                <label htmlFor="lang">{icons.language}</label>
-                <select name="language" id="lang" className='w-[90px] text-miniText text-globalBlack bg-transparent focus:outline-none'>
-                  <option value="Русский" className='bg-transparent'>Русский</option>
-                  <option value="English" className='bg-transparent'>English</option>
-                  <option value="Uzbek" className='bg-transparent'>Uzbek</option>
-                </select>
-              </form>
+                {
+                  part.map((element, value) => {
+                    return (
+                      <button key={element.value} className={`${activePart === element.slug ? 'border-globalGreen text-globalGreen' : 'border-transparent text-gray'} rounded-[4px] text-miniText py-[5px] px-[10px] border-[1px]`} onClick={() => setActivePart(element.slug)}>
+                        {element.linkName}
+                      </button>
+                    )
+                  })
+                }
+              </div>
 
-              {
-                part.map((element, value) => {
-                  return (
-                    <button key={element.value} className={`${activePart === element.slug ? 'border-globalGreen text-globalGreen' : 'border-transparent text-gray'} rounded-[4px] text-miniText py-[5px] px-[10px] border-[1px]`} onClick={() => setActivePart(element.slug)}>
-                      {element.linkName}
-                    </button>
-                  )
-                })
-              }
+              <div className='flex items-center justify-end gap-[30px]'>
+                <a href="tel:+99 899 999-99-99" className='text-miniText text-gray'>+998 99 999-99-99</a>
+                <p className='text-miniText text-gray cursor-pointer'>Связаться с нами</p>
+              </div>
+
             </div>
-
-            <div className='flex items-center justify-end gap-[30px]'>
-              <a href="tel:+99 899 999-99-99" className='text-miniText text-gray'>+998 99 999-99-99</a>
-              <p className='text-miniText text-gray cursor-pointer'>Связаться с нами</p>
-            </div>
-
           </div>
 
         </div>
