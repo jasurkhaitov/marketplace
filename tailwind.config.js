@@ -27,7 +27,7 @@ module.exports = {
         gray: "#999999",
         globalGreen: "#00B709",
         FgrayWhite: "#FAFAFA",
-        BorderColor: '#ECECEC'
+        BorderColor: '#ECECEC',
       },
 
       fontFamily: {
@@ -69,7 +69,11 @@ module.exports = {
             fontWeight: "700",
             letterSpacing: 0,
           }
-        ],
+        ]
+      },
+
+      backgroundImage : {
+        sliderOneBackground : "url('./assets/img/sliderBack.png')",
       },
     },
   },
