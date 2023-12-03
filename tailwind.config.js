@@ -74,6 +74,7 @@ module.exports = {
 
       backgroundImage : {
         sliderOneBackground : "url('./assets/img/sliderBack.png')",
+        aboutTitle : "url('./assets/img/aboutTitle.png')",
       },
     },
   },

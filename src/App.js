@@ -7,6 +7,7 @@ import Liked from './pages/Liked';
 import Store from './pages/Store';
 import Profile from './pages/Profile';
 import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/liked' element={<Liked/>}/>
           <Route path='/chosen' element={<Store/>}/>
           <Route path='/profile' element={<Profile/>}/>
+          <Route path='/aboutUs' element={<AboutUs/>}/>
         </Routes>
 
       </Contexts.Provider>

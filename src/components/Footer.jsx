@@ -1,5 +1,6 @@
 import React from 'react'
 import { buyer, company, network, partner, socialMedia } from '../utilits/Const'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -25,7 +26,7 @@ function Footer() {
           <h3 className='text-secondText mb-[30px] text-[#171515] '>Компания</h3>
               {
                 company.map((element, value) => { 
-                  return <li key={value} className='mb-[15px] text-miniText text-[#999999] '>{element.linkName}</li> 
+                  return <li key={value} className='mb-[15px] text-miniText text-[#999999] ' ><Link to={element.slug} >{element.linkName}</Link> </li> 
                 })
               }
           </ul>
